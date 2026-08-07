@@ -490,6 +490,7 @@
   }
 
   function cookieBanner() {
+    if (window.location.pathname === "/") return;
     var KEY = "pressed-clone-cookie-dismissed";
     var banner = ensureCookieBanner();
     if (!banner) return;
